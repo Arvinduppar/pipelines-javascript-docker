@@ -1,6 +1,11 @@
 # Maven
 - task: Docker@2
   inputs:
+    repository: 'aruppa'
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
+- task: Docker@2
+  inputs:
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
 # Build your Java project and run tests with Apache Maven.
